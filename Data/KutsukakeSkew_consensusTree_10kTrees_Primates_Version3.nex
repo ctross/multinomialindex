@@ -1,0 +1,38 @@
+#NEXUS
+[created by the 10kTree Website - http://10kTrees.fas.harvard.edu]
+BEGIN TREES;
+translate
+1 Cercopithecus_ascanius,
+2 Cercopithecus_mitis,
+3 Chlorocebus_aethiops,
+4 Erythrocebus_patas,
+5 Eulemur_fulvus_fulvus,
+6 Lemur_catta,
+7 Propithecus_verreauxi,
+8 Alouatta_palliata,
+9 Alouatta_seniculus,
+10 Brachyteles_arachnoides,
+11 Cebus_apella,
+12 Cebus_capucinus,
+13 Saimiri_sciureus,
+14 Gorilla_beringei,
+15 Pan_paniscus,
+16 Pan_troglodytes_schweinfurthii,
+17 Pan_troglodytes_verus,
+18 Lophocebus_albigena,
+19 Macaca_arctoides,
+20 Macaca_fascicularis,
+21 Macaca_fuscata,
+22 Macaca_mulatta,
+23 Macaca_nemestrina,
+24 Macaca_nigra,
+25 Macaca_radiata,
+26 Macaca_sylvanus,
+27 Mandrillus_sphinx,
+28 Papio_anubis,
+29 Papio_ursinus,
+30 Piliocolobus_badius,
+31 Procolobus_verus,
+32 Semnopithecus_entellus;
+tree consensus_32species = (((((((2:6.429209,1:6.429209):3.418917,(4:8.627245,3:8.627244):1.220881):5.027053,((27:11.350463,(18:5.769163,(28:2.678262,29:2.678262):3.090901):5.581300):1.502062,((((19:4.705214,25:4.705214):1.331851,(24:4.267136,23:4.267135):1.769930,21:6.037065):0.840931,(20:5.045978,22:5.045978):1.832017):1.782804,26:8.660800):4.191726):2.022653):6.535196,((30:10.647450,31:10.647450):4.787707,32:15.435158):5.975217):8.589626,(14:8.652233,(15:2.333553,(16:1.081422,17:1.081423):1.252131):6.318679):21.347768):16.811821,(((8:3.888217,9:3.888216):10.872024,10:14.760240):6.561060,((12:6.449384,11:6.449384):12.120521,13:18.569905):2.751396):25.490521):26.191197,(7:33.264716,(5:15.019595,6:15.019596):18.245120):39.738301);
+END;

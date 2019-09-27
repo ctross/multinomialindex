@@ -1,0 +1,85 @@
+ID,Common,Species,N_male,N_female,B_index,B_p_value,lambda,maximum_proportion_mating,rank_most_successful_male,N_copulations_observed,male_dispersal_pattern,breeding_season_duration,duration_estrous,observed_estrous_overlap,expected_estrus_overlap,synchrony_index
+1,mantled howler monkey,Alouatta_palliata,3,15,0.02,0.18,0.33,0.47,1,34,D,365,3,7.5,2.5,0.41
+2,mantled howler monkey,Alouatta_palliata,2,10,-0.31,0.72,0.39,0.62,1,8,D,365,3,7.5,1.1,0.41
+3,red howler monkey,Alouatta_seniculus,2,NA,NA,NA,1,1,1,NA,D,365,3,2.5,NA,0.13
+4,red howler monkey,Alouatta_seniculus,2,NA,NA,NA,1,1,1,NA,D,365,3,2.5,NA,0.13
+5,muriqui,Brachyteles_arachnoides,5,18,0.01,0.01,0.16,0.26,NA,227,P,153,2,14.9,7.9,0.53
+6,muriqui,Brachyteles_arachnoides,7,8,0.06,0.001,0.34,0.39,NA,39,P,153,2,14.9,1.7,0.53
+7,muriqui,Brachyteles_arachnoides,8,8,0.16,0,0.5,0.5,NA,18,P,153,2,14.9,1.7,0.53
+8,muriqui,Brachyteles_arachnoides,19,25,0.01,0,0.09,0.1,NA,215,P,153,2,14.9,13.8,0.53
+9,brown capuchin,Cebus_apella,5,6,NA,NA,0.34,0.38,1,NA,D,92,5,9.5,13.5,0.44
+10,white-faced capuchin,Cebus_capucinus,4,6,-0.63,0.91,0.5,0.5,3,4,D,212,NA,15.8,2.9,NA
+11,red-tailed monkey,Cercopithecus_ascanius,9,10,NA,NA,0.59,0.59,NA,18,D,182,3,4.1,4.1,NA
+12,blue monkey,Cercopithecus_mitis,9,12,NA,NA,0.24,0.29,1,NA,D,120,2,1.5,5.9,-0.61
+13,blue monkey,Cercopithecus_mitis,19,18,NA,NA,0.19,0.18,4,150,D,120,2,1.5,12,-0.61
+14,vervet monkey,Chlorocebus_aethiops,2,3,0.48,0,1,1,1,26,D,92,33,92.9,80.6,NA
+15,vervet monkey,Chlorocebus_aethiops,3,4,0.6,0,1,1,1,10,NA,92,33,92.9,92.9,NA
+16,redfronted lemur,Eulemur_fulvus_fulvus,4,2,NA,NA,NA,0.77,1,NA,D,NA,NA,NA,NA,NA
+17,redfronted lemur,Eulemur_fulvus_fulvus,6,3,NA,NA,NA,0.41,1,NA,D,NA,NA,NA,NA,NA
+18,redfronted lemur,Eulemur_fulvus_fulvus,2,3,0.38,0.12,1,1,1,4,D,NA,NA,NA,NA,NA
+19,redfronted lemur,Eulemur_fulvus_fulvus,2,3,0.25,0.49,1,1,1,2,D,NA,NA,NA,NA,NA
+20,patas monkey,Erythrocebus_patas,5,4,NA,NA,0.41,0.36,1,31,D,62,2,47.7,2.3,0.56
+21,mountain gorilla,Gorilla_beringei,2,7,0.21,0,0.8,0.83,1,48,D,365,2,0,0.2,-0.39
+22,mountain gorilla,Gorilla_beringei,3,11,0.15,0.001,0.63,0.66,1,35,D,365,2,0,0.6,-0.39
+23,ringtailed lemur,Lemur_catta,3,5,0.08,0.21,0.63,0.5,1,7,D,38,1,0,2.5,-0.61
+24,ringtailed lemur,Lemur_catta,3,5,-0.08,1,0.22,0.57,1,7,D,38,1,0,2.5,-0.61
+25,ringtailed lemur,Lemur_catta,2,4,-0.08,1,0,0.43,1.5,6,D,38,1,0,1.5,-0.61
+26,gray-checked mangebey,Lophocebus_albigena,5,7,0.18,0,0.55,0.53,1,53,D,212,4,1.9,2.6,NA
+27,stump-tailed macaque,Macaca_arctoides,7,16,NA,NA,NA,0.69,1,113,D,NA,NA,NA,NA,NA
+28,long-tailed macaque,Macaca_fascicularis,10,12,NA,NA,NA,0.26,1,940,D,123,15,66.6,85,0.48
+29,Japanese macaque,Macaca_fuscata,5,6,NA,NA,1,1,1,NA,D,46,11,56.5,86.9,0.27
+30,Japanese macaque,Macaca_fuscata,8,NA,0.03,0,0.21,0.25,1,204,D,46,11,56.5,NA,0.27
+31,Japanese macaque,Macaca_fuscata,9,NA,0.01,0.002,0.11,0.19,1,276,D,46,11,56.5,NA,0.27
+32,Japanese macaque,Macaca_fuscata,7,NA,0.08,0,0.34,0.34,3,204,D,46,11,56.5,NA,0.27
+33,Japanese macaque,Macaca_fuscata,11,18,NA,NA,NA,0.3,1,NA,D,46,11,56.5,96.8,0.27
+34,rhesus macaque,Macaca_mulatta,11,12,0.05,0,0.23,0.18,3,184,D,82,9,39.8,77.6,0.23
+35,rhesus macaque,Macaca_mulatta,5,9,0.53,0,0.86,0.86,1,28,D,82,9,39.8,62,0.23
+36,rhesus macaque,Macaca_mulatta,6,16,NA,NA,NA,0.76,1,99,D,82,9,39.8,89.6,0.23
+37,rhesus macaque,Macaca_mulatta,10,17,NA,NA,NA,0.72,1,85,D,82,9,39.8,91.4,0.23
+38,rhesus macaque,Macaca_mulatta,10,15,NA,NA,NA,0.68,1,72,D,82,9,39.8,87.3,0.23
+39,rhesus macaque,Macaca_mulatta,6,12,NA,NA,NA,0.56,1,34,D,82,9,39.8,77.6,0.23
+40,rhesus macaque,Macaca_mulatta,7,12,0.26,0,0.59,0.57,1,42,D,82,9,39.8,77.6,0.23
+41,rhesus macaque,Macaca_mulatta,9,19,NA,NA,NA,0.42,1,46,D,82,9,39.8,94.3,0.23
+42,pig-tailed macaque,Macaca_nemestrina,5,22,0.19,0,0.56,0.55,1,56,D,365,13,41.7,47.1,0.31
+43,pig-tailed macaque,Macaca_nemestrina,3,14,0.13,0,0.58,0.57,1,150,NA,365,13,41.7,26.3,0.31
+44,black macaque,Macaca_nigra,6,30,0.08,0.002,0.41,0.42,2,26,D,NA,NA,NA,NA,NA
+45,bonnet macaque,Macaca_radiata,5,28,NA,NA,NA,0.46,1,NA,D,92,5,NA,82.4,NA
+46,bonnet macaque,Macaca_radiata,6,29,NA,NA,NA,0.31,1,NA,D,92,5,NA,83.9,NA
+47,Barbary Macaque,Macaca_sylvanus,5,28,0,0.21,0.16,0.27,1,97,D,76,14,35.9,100,0.08
+48,Barbary Macaque,Macaca_sylvanus,9,32,0.11,0,0.36,0.38,1,325,D,76,14,35.9,100,0.08
+49,Barbary Macaque,Macaca_sylvanus,7,9,0.05,0,0.28,0.24,4,179,D,76,14,35.9,90,0.08
+50,mandrill,Mandrillus_sphinx,3,14,0.31,0,0.79,0.8,1,30,D,NA,NA,NA,NA,NA
+51,bonobo,Pan_paniscus,8,15,NA,NA,0.24,0.28,1,NA,P,365,15,NA,35.3,NA
+52,bonobo,Pan_paniscus,7,8,0.03,0.002,0.2,0.23,1,NA,P,365,15,NA,13.6,NA
+53,chimpanzee,Pan_troglodytes,4,19,NA,NA,0.76,0.74,1,23,P,365,14,7.8,43.4,-0.49
+54,chimpanzee,Pan_troglodytes,4,19,0.33,0,0.76,0.77,1,29,P,365,14,7.8,43.4,-0.49
+55,chimpanzee,Pan_troglodytes,4,19,0.12,0.04,0.5,0.48,1,13,P,365,14,7.8,43.4,-0.49
+56,chimpanzee,Pan_troglodytes,4,19,NA,NA,1,1,1,21,P,365,14,7.8,43.4,-0.49
+57,chimpanzee,Pan_troglodytes,3,19,0.28,0.07,1,1,1,10,P,365,14,7.8,43.4,-0.49
+58,chimpanzee,Pan_troglodytes,2,19,0.21,0.02,0.88,0.89,1,3,P,365,14,7.8,43.4,-0.49
+59,chimpanzee,Pan_troglodytes,2,19,NA,NA,1,1,1,5,P,365,14,7.8,43.4,-0.49
+60,chimpanzee,Pan_troglodytes,3,19,NA,NA,1,1,1,12,P,365,14,7.8,43.4,-0.49
+61,chimpanzee,Pan_troglodytes,3,19,0.47,0,0.91,0.91,1,15,P,365,14,7.8,43.4,-0.49
+62,chimpanzee,Pan_troglodytes,3,19,0.27,0,0.72,0.75,1,7,P,365,14,7.8,43.4,-0.49
+63,chimpanzee,Pan_troglodytes,3,19,0.36,0,0.87,0.88,1,21,P,365,14,7.8,43.4,-0.49
+64,chimpanzee,Pan_troglodytes,3,19,0.03,0.06,0.38,0.51,3,42,P,365,14,7.8,43.4,-0.49
+65,chimpanzee,Pan_troglodytes,3,19,0.42,0,0.89,0.9,1,34,P,365,14,7.8,43.4,-0.49
+66,chimpanzee,Pan_troglodytes,3,19,0.28,0,0.7,0.71,1,37,P,365,14,7.8,43.4,-0.49
+67,chimpanzee,Pan_troglodytes,5,17,0.01,0.24,0.19,0.28,4,42,P,365,14,7.8,37.9,-0.49
+68,chimpanzee,Pan_troglodytes,9,29,NA,NA,0.27,0.27,1,27,P,365,14,7.8,66.3,-0.49
+69,chimpanzee,Pan_troglodytes,9,29,0.02,0.08,0.24,0.29,1,67,P,365,14,7.8,66.3,-0.49
+70,savanna baboon,Papio_anubis,8,19,0.27,0,0.59,0.59,6,41,D,365,6,NA,12.8,NA
+71,savanna baboon,Papio_anubis,6,19,0.1,0,0.4,0.37,2,100,D,365,6,NA,12.8,NA
+72,savanna baboon,Papio_anubis,6,19,0.12,0,0.45,0.38,4,47,D,365,6,NA,12.8,NA
+73,savanna baboon,Papio_anubis,5,19,0.1,0,0.43,0.39,2,92,D,365,6,NA,12.8,NA
+74,savanna baboon,Papio_anubis,6,19,0.09,0,0.39,0.36,4,103,D,365,6,NA,12.8,NA
+75,savanna baboon,Papio_anubis,7,19,0.05,0,0.27,0.33,5,337,D,365,6,NA,12.8,NA
+76,savanna baboon,Papio_anubis,5,19,0.07,0,0.35,0.34,3,340,D,365,6,NA,12.8,NA
+77,chacma baboon,Papio_ursinus,3,31,0.04,0.04,0.41,0.51,2,35,D,365,9,NA,45.6,NA
+78,chacma baboon,Papio_ursinus,6,7,0.04,0.002,0.31,0.34,1,53,D,365,9,NA,4.3,NA
+79,chacma baboon,Papio_ursinus,3,NA,0.05,0,0.41,0.52,1,194,D,365,9,NA,NA,NA
+80,red colobus,Piliocolobus_badius,8,16,NA,NA,0.29,0.31,NA,NA,P,244,5,75,13.8,NA
+81,olive colobus,Procolobus_verus,2,2,0.48,0,0.99,0.99,1,207,D,89,NA,18.4,NA,NA
+82,Verreaux's sifaka,Propithecus_verreauxi,2,3,-0.08,1,0.33,0.6,1,5,D,NA,NA,NA,NA,NA
+83,squirrel monkey,Saimiri_sciureus,3,16,0.18,0.002,0.67,0.7,NA,27,P,59,2,11.9,29.6,NA
+84,common langur,Semnopithecus_entellus,6,19,0.07,0,0.36,0.38,1,48,D,365,6,4.2,12.8,-0.49
