@@ -81,7 +81,7 @@ p4 = ggplot()  +
 
 p4
 
-ggsave("EmpRes.pdf",p1,height=7.5,width=3.5)
+ggsave("EmpRes.pdf", p4, height=7.5, width=3.5)
 
 
 
