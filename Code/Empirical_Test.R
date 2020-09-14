@@ -79,6 +79,8 @@ p4 = ggplot()  +
   geom_segment(data=dfb, aes(x = x0, xend = x0, y = as.numeric(Group), yend = as.numeric(Group) + 0.25), color = "royalblue3") + 
   theme_ridges(grid = TRUE, center = TRUE) +   geom_hline(yintercept=c(1,2,3), color="white") + ylab("")
 
+p4
+
 ggsave("EmpRes.pdf", p4, height=3.5, width=11.5)
 
 
