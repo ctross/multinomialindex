@@ -12,15 +12,15 @@ functions{
       ScrapV = 0;   //# Init counters at zero
       ScrapS = 0;
    
-      for( i in 1:N){ //# Then loop through all data points and sum the values of the variable
+      for(i in 1:N){ //# Then loop through all data points and sum the values of the variable
        ScrapV = (D[i]==j)? X[i]+ScrapV: ScrapV; //# This is ifelse() function here
        ScrapS = (D[i]==j)? 1+ScrapS: ScrapS;   
-      }
+        }
     
-     Q[j] = ScrapV/ScrapS; //# For each species j, this is the mean value of X
+       Q[j] = ScrapV/ScrapS; //# For each species j, this is the mean value of X
     }
   
-    for( i in 1:N){        //# Now, make each species mean back to the relevant data point
+    for(i in 1:N){        //# Now, map each species mean back to the relevant data point
      Res[i] = Q[D[i]];
     }
 
@@ -35,13 +35,13 @@ data{
   
   int S[N]; //# Species ID of data point i
 
-  vector[N] M_Rough; //# M (or B) values, with missing indicators
+  vector[N] M_Rough;         //# M (or B) values, with missing indicators
   
-  matrix[J, J] Distance; //# Phylogenetic distance between species x and y
+  matrix[J, J] Distance;     //# Phylogenetic distance between species x and y
   
   vector[N] Males;           //# Count of males in group
   vector[N] Females_Rough;   //# Count of females in group, with missing indicators
-  vector[N] Cops_Rough;      //# Count of copulations slash RS in group, with missing indicators
+  vector[N] Cops_Rough;      //# Count of copulations or RS in group, with missing indicators
   vector[N] Seas_Rough;      //# Breeding season duration, with missing indicators
   vector[N] EstDur_Rough;    //# Estrous duration, with missing indicators
   vector[N] EstOvO_Rough;    //# Observed estrous overlap, with missing indicators
@@ -124,7 +124,7 @@ transformed parameters{
   
   for (i in 1:(J-1)){       //# Build L from Distance data and parameters
   for (j in (i+1):J){
-                L[i,j] = exp( -Zeta * Distance[i,j]);     
+                L[i,j] = exp(-Zeta * Distance[i,j]);     
                 L[j,i] = L[i,j];                          
                        }}
 
@@ -232,4 +232,3 @@ generated quantities{
                                             }
 
 }
-
