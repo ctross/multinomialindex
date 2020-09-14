@@ -69,18 +69,16 @@ dfb$Group = factor(dfb$Group,levels(dfb$Group)[c(2,1,3)])
 p4 = ggplot()  +
  stat_density_ridges(data=df, aes(x=M, y=Group, fill=0.5 - abs(0.5-..ecdf..)),
   geom = "density_ridges_gradient", calc_ecdf = TRUE, color="white") +
-  scale_fill_viridis(name = "Tail probability", direction = -1, option="inferno")+ facet_grid(.~Sex) +   
+  scale_fill_viridis(name = "Tail probability", direction = -1,option="inferno")+ facet_grid(Sex ~ ., switch = "both") +   
   theme(strip.text.x = element_text(size=14, face="bold"), strip.text.y = element_text(size=14, face="bold")) +
   theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold")) +
-  theme(legend.title=element_text(size=14),legend.text=element_text(size=12))+      
   geom_point(data=dfb, aes(x = x0, y = as.numeric(Group) + 0.25), color = "white",size=3,shape=18) +
   geom_segment(data=dfb, aes(x = x0, xend = x0, y = as.numeric(Group), yend = as.numeric(Group) + 0.25), color = "white",size=1.5) + 
   geom_point(data=dfb, aes(x = x0, y = as.numeric(Group) + 0.25), color = "royalblue3",size=2,shape=18) +
   geom_segment(data=dfb, aes(x = x0, xend = x0, y = as.numeric(Group), yend = as.numeric(Group) + 0.25), color = "royalblue3") + 
-  theme_ridges(grid = TRUE, center = TRUE) +   geom_hline(yintercept=c(1,2,3), color="white") + ylab("")
-
+  geom_hline(yintercept=c(1,2,3),color="white") + ylab("") + theme(legend.position = "none") + coord_cartesian(xlim = c(-0.1, 0.7))
+   
 p4
-
 ggsave("EmpRes.pdf", p4, height=7.5, width=3.5)
 
 
