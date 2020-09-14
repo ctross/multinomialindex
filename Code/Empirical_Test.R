@@ -117,3 +117,4 @@ print(HPDI(c(M_post_K_male-M_post_E_male),0.9))
 
 print(mean(c(M_post_A_male-M_post_E_male)))
 print(HPDI(c(M_post_A_male-M_post_E_male),0.9))
+
