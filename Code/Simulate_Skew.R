@@ -365,9 +365,9 @@ hline_dat = data.frame(Index=levels(dat$Index),
 p1 = ggplot(dat, aes(N, Value, color=Mean, fill=Mean, lty=Exposure))+
   geom_hline(data=hline_dat, aes(yintercept=threshold), colour="grey92") +
   stat_smooth()+
-  facet_grid(Index~Skew,scales="free_y")  +  ylab("Index Value")+ xlab("Sample Size")
-  + scale_x_continuous(trans='log10',breaks = base_breaks(n=9)) 
-  +   theme(strip.text.x = element_text(size=14, face="bold"),
+  facet_grid(Index~Skew,scales="free_y")  +  ylab("Index Value")+ xlab("Sample Size") +
+  scale_x_continuous(trans='log10',breaks = base_breaks(n=9)) + 
+  theme(strip.text.x = element_text(size=14, face="bold"),
           strip.text.y = element_text(size=14, face="bold")) + theme(axis.text=element_text(size=12),
           axis.title=element_text(size=14,face="bold"))+ 
           scale_color_viridis(discrete=TRUE,end=0.8, option="inferno",direction=-1)+ 
