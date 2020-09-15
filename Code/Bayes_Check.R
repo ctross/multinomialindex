@@ -105,7 +105,7 @@ sim_rs = function(N=100, Rate=3.3, L=0, U=1, et=1, es=0.3){
  dat1x.p = dat1x.p[complete.cases(dat1x.p),]
  
 
- pB   ggplot() +    
+ pB =  ggplot() +    
  stat_density_ridges(data= dat1x.p, aes(x=M, y=factor(Lab4), fill=0.5 - abs(0.5-..ecdf..)),
   geom = "density_ridges_gradient", calc_ecdf = TRUE, color="white") +
   scale_fill_viridis(name = "Tail probability", direction = -1,option="inferno")+   
