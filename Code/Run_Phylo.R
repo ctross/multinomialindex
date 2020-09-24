@@ -273,7 +273,18 @@ p1 = ggplot(data=df3,
     theme(legend.title=element_text(size=12,face="bold"),legend.text=element_text(size=12))+ guides(color = guide_legend(reverse = TRUE))
  p1
 
-ggsave("Phylo1.pdf",p1,width=18,height=6)
+p1b <- ggplot(df3,aes(x=Metric,y=Mean,ymin=L,ymax=H,color=Metric,linetype=Model))+ 
+     geom_linerange(size=1,aes(color=Metric), position = position_dodge2(width=0.5,preserve = "total",padding = 1))+
+     geom_point(size=2,aes(color=Metric), position = position_dodge2(width=0.5,preserve = "total",padding = 1))+
+     facet_grid(~Variable,scales="free",space = "free_y")+geom_hline(aes(yintercept=0),color="black",linetype="dashed")+
+     labs(y="Regression parameters", x="") + theme(strip.text.x = element_text(size=14,face="bold"), 
+     strip.text.y = element_text(size=14,face="bold"),axis.text=element_text(size=12),axis.title.y=element_text(size=14,
+     face="bold"), axis.title.x=element_blank())+theme(strip.text.y = element_text(angle = 360))  + coord_flip() + theme(panel.spacing = unit(1, "lines")) +
+     scale_color_viridis(direction = -1,option="inferno",discrete=TRUE,begin=0.15, end=0.8) +guides(color = FALSE)
+
+ p1b  
+
+ggsave("Phylo1.pdf",p1b,width=18,height=3)
 
 df4 = df2[which(!df2$Variable %in% c("N_Males_Offset", "N_Females_Offset", "Copulations_Offset", "Season_Duration_Offset", 
                                      "Estrous_Duration_Offset", "Estrous_Overlap_Offset")),]
@@ -295,7 +306,19 @@ p2 = ggplot(data=df4,
     theme(axis.text=element_text(size=11), axis.title=element_text(size=14,face="bold")) +
     theme(legend.title=element_text(size=14,face="bold"),legend.text=element_text(size=12))+ guides(color = guide_legend(reverse = TRUE))
  p2
-ggsave("Phylo2.pdf",p2,width=18,height=6)
+
+p2b <- ggplot(df4,aes(x=Metric,y=Mean,ymin=L,ymax=H,color=Metric,linetype=Model))+ 
+     geom_linerange(size=1,aes(color=Metric), position = position_dodge2(width=0.5,preserve = "total",padding = 1))+
+     geom_point(size=2,aes(color=Metric), position = position_dodge2(width=0.5,preserve = "total",padding = 1))+
+     facet_grid(~Variable,scales="free",space = "free_y")+geom_hline(aes(yintercept=0),color="black",linetype="dashed")+
+     labs(y="Regression parameters", x="") + theme(strip.text.x = element_text(size=14,face="bold"), 
+     strip.text.y = element_text(size=14,face="bold"),axis.text=element_text(size=12),axis.title.y=element_text(size=14,
+     face="bold"), axis.title.x=element_blank())+theme(strip.text.y = element_text(angle = 360))  + coord_flip() + theme(panel.spacing = unit(1, "lines")) +
+     scale_color_viridis(direction = -1,option="inferno",discrete=TRUE,begin=0.15, end=0.8) +guides(color = FALSE)
+
+ p2b  
+
+ggsave("Phylo2.pdf",p2b,width=18,height=3)
 
 
 ggsave("Trace_P_M.pdf", traceplot(fit0_M, pars=c("Beta")), height=4, width=12)   
